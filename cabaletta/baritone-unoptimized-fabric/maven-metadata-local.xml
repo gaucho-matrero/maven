@@ -3,10 +3,10 @@
   <groupId>cabaletta</groupId>
   <artifactId>baritone-unoptimized-fabric</artifactId>
   <versioning>
-    <release>1.7</release>
+    <release>1.7.1</release>
     <versions>
-      <version>1.7</version>
+      <version>1.7.1</version>
     </versions>
-    <lastUpdated>20211014232048</lastUpdated>
+    <lastUpdated>20220118201942</lastUpdated>
   </versioning>
 </metadata>
