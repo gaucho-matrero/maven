@@ -1,11 +1,11 @@
 #!/bin/sh
-printf "Enter baritone version (Example: 1.7.2): "
+printf "Enter baritone version suffix (Example: 1.18-SNAPSHOT): "
 read version
-printf "Enter head version (Example: 1.7): "
+printf "Enter maven version (Example: 1.8.1): "
 read head_version
-call mvn install:install-file -Dfile=baritone-$version.jar -DgroupId=cabaletta -DartifactId=baritone -Dversion=$head_version -Dpackaging=jar -DcreateChecksum=true -DlocalRepositoryPath=.
+mvn install:install-file -Dfile=baritone-$version.jar -DgroupId=cabaletta -DartifactId=baritone -Dversion=$head_version -Dpackaging=jar -DcreateChecksum=true -DlocalRepositoryPath=.
 printf "Successfully built baritone-$version maven"
-call mvn install:install-file -Dfile=baritone-$version-dev.jar -DgroupId=cabaletta -DartifactId=baritone-dev -Dversion=$head_version -Dpackaging=jar -DcreateChecksum=true -DlocalRepositoryPath=.
+mvn install:install-file -Dfile=baritone-$version-dev.jar -DgroupId=cabaletta -DartifactId=baritone-dev -Dversion=$head_version -Dpackaging=jar -DcreateChecksum=true -DlocalRepositoryPath=.
 printf "Successfully built baritone-dev-$version maven"
 mvn install:install-file -Dfile=baritone-api-fabric-$version.jar -DgroupId=cabaletta -DartifactId=baritone-api-fabric -Dversion=$head_version -Dpackaging=jar -DcreateChecksum=true -DlocalRepositoryPath=.
 printf "Successfully built baritone-api-fabric-$version maven"
