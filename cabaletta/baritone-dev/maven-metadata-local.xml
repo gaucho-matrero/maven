@@ -3,10 +3,11 @@
   <groupId>cabaletta</groupId>
   <artifactId>baritone-dev</artifactId>
   <versioning>
-    <release>1.7.1</release>
+    <release>1.8</release>
     <versions>
       <version>1.7.1</version>
+      <version>1.8</version>
     </versions>
-    <lastUpdated>20220123002527</lastUpdated>
+    <lastUpdated>20220125145945</lastUpdated>
   </versioning>
 </metadata>

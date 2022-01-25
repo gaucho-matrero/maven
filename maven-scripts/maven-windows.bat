@@ -1,6 +1,6 @@
 @echo off
-SET /P version="Enter baritone version (Example: 1.7.2): "
-SET /P head_version="Enter head version (Example: 1.7): "
+SET /P version="Enter baritone version suffix (Example: 1.18-SNAPSHOT): "
+SET /P head_version="Enter maven version (Example: 1.8.1): "
 call mvn install:install-file -Dfile=baritone-%version%.jar -DgroupId=cabaletta -DartifactId=baritone -Dversion=%head_version% -Dpackaging=jar -DcreateChecksum=true -DlocalRepositoryPath=.
 echo Successfully built baritone-%version% maven
 call mvn install:install-file -Dfile=baritone-%version%-dev.jar -DgroupId=cabaletta -DartifactId=baritone-dev -Dversion=%head_version% -Dpackaging=jar -DcreateChecksum=true -DlocalRepositoryPath=.
