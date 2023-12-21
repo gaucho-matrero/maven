@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>cabaletta</groupId>
-  <artifactId>baritone-unoptimized-fabric</artifactId>
+  <artifactId>baritone-unoptimized</artifactId>
   <versioning>
     <release>1.20.2-beta1</release>
     <versions>
