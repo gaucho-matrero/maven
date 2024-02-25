@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>cabaletta</groupId>
-  <artifactId>baritone-unoptimized</artifactId>
+  <artifactId>baritone-unoptimized-fabric</artifactId>
   <versioning>
-    <release>1.20.2-beta1</release>
+    <release>1.20.4-beta1</release>
     <versions>
-      <version>1.20.2-beta1</version>
+      <version>1.20.4-beta1</version>
     </versions>
   </versioning>
 </metadata>
